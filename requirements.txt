@@ -1,0 +1,25 @@
+# LangChain / LangGraph
+langchain
+langchain-core
+langchain-community
+langgraph
+
+# Mistral AI
+langchain-mistralai
+mistralai
+
+# Environment variables
+python-dotenv
+
+# API / Web backend
+fastapi
+uvicorn
+
+# Data validation
+pydantic
+
+# HTTP requests
+requests
+
+# Jupyter support (optional, useful during development)
+ipykernel
