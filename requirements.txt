@@ -23,3 +23,7 @@ requests
 
 # Jupyter support (optional, useful during development)
 ipykernel
+
+## Database to store converstaions remotely
+langgraph-checkpoint-sqlite
+aiosqlite
