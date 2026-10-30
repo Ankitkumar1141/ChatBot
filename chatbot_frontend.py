@@ -68,12 +68,14 @@ if user_input:
     with st.chat_message('user'):
         st.text(user_input)
 
+
+## implemented observability
     CONFIG = {
         "configurable": {"thread_id": st.session_state["thread_id"]},
         "metadata": {
             "thread_id": st.session_state["thread_id"]
         },
-        "run_name": "chat_turn",
+        "run_name": "Next_turn",
     }
     ## add the ai assistant message to the message history
     with st.chat_message("assistant"):
