@@ -27,3 +27,16 @@ ipykernel
 ## Database to store converstaions remotely
 langgraph-checkpoint-sqlite
 aiosqlite
+
+## tools 
+yfinance           
+tzdata
+ddgs                
+wikipedia           
+arxiv               
+xmltodict           
+youtube-search 
+requests
+beautifulsoup4
+numexpr            
+pint 

@@ -29,7 +29,7 @@ from langgraph.graph.message import add_messages
 
 ## create state
 class ChatState(TypedDict):
-    messages : Annotated[list[BaseMessage], add_messages]
+    messages : Annotated[list[BaseMessage], add_messages]  
 
 ## create checkpointer object
 checkpointer = MemorySaver()
