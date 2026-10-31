@@ -21,7 +21,7 @@ from langchain_community.tools import (
     YouTubeSearchTool,
 )
 from langchain_community.tools.yahoo_finance_news import YahooFinanceNewsTool
-from langchain_community.utilities import WikipediaAPIWrapper
+from langchain_community.utilities import WikipediaAPIWrapper, DuckDuckGoSearchAPIWrapper
 
 REQUEST_TIMEOUT = 10
 MAX_CHARS = 6000
@@ -35,6 +35,7 @@ web_search = DuckDuckGoSearchResults(
         "have changed recently. Input: a short search query. Returns snippets and links."
     ),
     max_results=5,
+    api_wrapper=DuckDuckGoSearchAPIWrapper(region="in-en"),
 )
 
 ## tool for wikipedia 
@@ -215,3 +216,21 @@ def unit_converter(value: float, from_unit: str, to_unit: str) -> str:
         return f"{value} {from_unit} = {qty.magnitude:.6g} {to_unit}"
     except Exception as e:
         return f"Conversion failed: {e}"
+
+tools = [
+    # search & knowledge
+    web_search,
+    wikipedia,
+    arxiv,
+    pubmed,
+    youtube,
+    fetch_url,
+    # real-time data
+    get_current_datetime,
+    get_weather,
+    convert_currency,
+    stock_news,
+    # computation
+    calculator,
+    unit_converter,
+]
