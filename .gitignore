@@ -2,3 +2,7 @@ chatbot_venv/
 chatbot_venv
 .env
 .env/
+chatbot.db
+chatbot.db-shm
+chatbot.db-wal
+__pycache__/
