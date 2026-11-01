@@ -2,7 +2,20 @@ chatbot_venv/
 chatbot_venv
 .env
 .env/
-chatbot.db
-chatbot.db-shm
-chatbot.db-wal
+
+# Secrets
+.env
+
+# Python
 __pycache__/
+*.pyc
+venv/
+.venv/
+
+# Local databases (conversation history)
+*.db
+*.db-shm
+*.db-wal
+
+# Editor
+.vscode/
