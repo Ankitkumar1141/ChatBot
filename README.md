@@ -23,7 +23,9 @@ This project is a conversational agent that decides *how* to answer each message
 
 ### LangSmith trace
 
-![LangSmith trace showing router, tool call and final response](assets/Screenshot 2026-11-01 230921.png)(assets/Screenshot 2026-11-01 230949.png)
+![LangSmith trace overview showing router, tool call and final response](assets/langsmith-trace-1.png)
+
+![LangSmith trace detail showing latency and token usage](assets/langsmith-trace-2.png)
 
 *A single turn traced end to end: router, tool agent, tool execution and final answer, with latency and token usage per step.*
 
