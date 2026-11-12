@@ -28,6 +28,9 @@ ipykernel
 langgraph-checkpoint-sqlite
 aiosqlite
 
+## MCP integration
+langchain-mcp-adapters
+
 ## tools 
 yfinance           
 tzdata
